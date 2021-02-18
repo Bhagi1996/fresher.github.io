@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <title>COVID-19</title>
+    <style>
+        .nav1{
+            background:linear-gradient(#060868,#0c0480,#060868);
+        }
+        .overview{
+            border-radius: 5px;
+            width: fit-content;
+            background-color: rgb(250, 246, 246);
+            background-size: cover;
+            /* box-shadow: 2px 2px 5px gray; */
+            transition: 500ms;
+        }
+        .bimage{
+            background-image: url(https://media.npr.org/assets/img/2020/06/15/seamus-coronavirus-d3-world-map-20200323_wide-daa14c69b3dc39836f094b030b0306cb93014bce.png);
+            background-repeat: no-repeat;
+            background-position:center center ;
+            background-size:100% 100%;
+            animation: slide 5s timing-function delay iteration-count direction fill-mode;
+            /* height: 500px; */
+           }
+           .tan{
+               border-radius: 10px;
+               padding: 5px ;
+               
+               height: 100px;
+              
+           }
+           #iinnp{
+               border: 1px solid black;
+               text-align: center;
+               border-radius: 3px;
+           }
+           #iinnp:focus{
+               background-color: white;
+               outline: none;
+               border: 1px solid green;
+           }
+       /* https://www.sharda.ac.in/blog/wp-content/uploads/2020/04/Raising-awareness-about-corona.jpg */
+    </style>
+</head>
+<body>
+    <div class=" container-fluid">
+        <!-- firstttt -->
+        <div class="row nav1">
+            <div class="col-md-6 text-light">
+               <h2 class="my-2 text-center text-md-left"> <span class="px-2">COVID19-Tracker</span></h2> 
+            </div>
+            <div class="col-md-6">
+                <div class="float-right text-center text-light my-2 border mr-4 d-none d-md-block" style="border-radius: 20px;box-shadow:0 0 5px rgb(253, 253, 253);"><img src="covidlogo.jpeg" alt="logo" height="40px" width="40px" style="border-radius: 50%;"> <span class="pl-1 pr-3"> <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" class=" text-decoration-none text-light">Covid Worldwide</a> </span>  </div>
+            </div>
+        </div>
+        <!-- seconddddd -->
+        <div class="row my-3 mx-4 ">
+            <div class="border border-success overview px-4" id="move1"> <span class="h3 float-left pt-1">Overview</span><span class="h3 float-right pt-1 font-weight-normal" id="move2" style="display: none;"></span></h3></div>
+        </div>
+        <!-- thirddd -->
+        <div class="row justify-content-around">
+            <div class="col-md-7 " >
+                <div class="row">
+                    <div class="col-md-12 pb-3 p-md-0 mx-4 mx-md-3 pt-2"><img src="#" alt="india" id="myimg" width="40px" style="vertical-align: -12%;"> <span style="font-size:25px;" id="ctry"></span>
+                    
+                        <span class="float-sm-right float-left mt-2">
+                            <input type="text" id="iinnp" class=" text-capitalize my-2 my-sm-0"><span class="btn btn-success btn-sm mb-1 ml-1" id="search">Search</span>
+                        </span> 
+
+                    </div>
+                    <div class="col-md-12 d-none d-md-block mt-3">
+                        <img src="left-co.png" alt="" width="100%" height="650px">
+                    </div>
+                </div>
+            </div>
+<!-- ..................................................................... -->
+            <div class="col-md-4  m-0 px-3 p-sm-0" >
+                <div class="row m-sm-1 m-1 pb-3 justify-content-center" style="border-radius: 20px;box-shadow: -2px 0 25px 1px rgb(71, 69, 69);background-color: #fff;">
+                    
+                    <div class="col-12 pt-4 py-5 border-bottom mt-0  text-light "  style="border-radius: 20px 20px 5px 5px;background-color:rgb(2, 2, 49);">
+                        <h2 class="text-center">COVID-19 LIVE UPDATE</h2>
+                    </div>
+                    <div class="col-11 pt-2">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row text-center">
+                                    <div class="col m-sm-1 m-1 bg-danger tan align-items-center"> <h4 class="text-center">cases</h4><h3 class="text-center" id="cases">12344</h3></div>
+                                    <div class="col m-sm-1 m-1 bg-primary tan" ><h4 class="text-center">Deaths</h4><h3 class="text-center" id="deaths">12344</h3></div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col m-1 bg-warning tan"><h4 class="text-center">Active</h4><h3 class="text-center" id="active">12344</h3></div>
+                                    <div class="col m-1 bg-secondary tan"><h4 class="text-center">Tests</h4><h3 class="text-center" id="tests">12344</h3></div>
+                                    <div class="col m-1 bg-success tan" ><h3 class="pt-3" id="continent">Asia </h3></div>
+                                    
+                                   
+                                    
+                                        
+                                </div>
+                                <div class="row justify-content-center text-center">
+                                    <div class="col bg-danger m-1 p-0" style="height: 50px;border-radius: 10px;">
+                                    <span class="float-left h3 mt-2 ml-3"><i class="fa fa-users" aria-hidden="true"></i></span> <abbr title="population"> <span class="float-right h3 mt-2 mr-3" id="population">12748</span></abbr></div>
+                                </div>
+                                <div class="row justify-content-center text-center">
+                                    <div class="col m-1 bg-primary" style="height: 50px;border-radius: 10px;"><h3 class="mt-2" id="country">country</h3></div>
+                                    <div class="col m-sm-1 m-1 bg-success" style="height: 50px;border-radius: 10px;">   <abbr title="recovered"> <span class="float-right h3 mt-2 mr-3" id="recovered">12748</span></abbr></div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col bg-danger m-sm-1 m-1 p-0" style="height: 200px;border-radius: 10px;">
+                                        <img src="co-card.jpg" alt="dh" width="100%" height="100%" style="border-radius: 10px;">
+                                </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>          
+                   </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- last section -->
+    <div class="container-fluid my-4 mx-0 ">
+        <div class="row justify-content-around">
+            <div class="col-md-6"><img src="covid-down.jpg" alt="" width="100%" class=" border"></div>
+            <div class="col-md-5 border my-md-0 my-2 mx-0 text-justify" style="border-radius: 7px;"> 
+                <h2 class="mx-md-3 mx-0 my-2">About COVID-19</h2>
+                <h5 class="mx-md-3 mx-0 my-2 font-weight-normal">The virus that causes COVID-19 is mainly transmitted through droplets generated when an infected person coughs, sneezes, or exhales. These droplets are too heavy to hang in the air, and quickly fall on floors or surfaces.You can be infected by breathing in the virus if you are within close proximity of someone who has COVID-19, or by touching a contaminated surface and then your eyes, nose or mouth.
+                Most people who fall sick with COVID-19 will experience mild to moderate symptoms and recover without special treatment.Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.
+                </h5>
+                    <span class="btn btn-success mb-3 mx-md-3 mx-0"> <a href="https://www.covid19india.org/" class=" text-decoration-none text-light">Click To Know More</a> </span>
+                    <span class="btn btn-danger mb-3 mx-0"> <a href="index.html" class=" text-decoration-none text-light">Go Back</a> </span>
+            </div>
+        </div>
+        <div class="mt-5 mx-0">
+           <p class="bg-dark text-light "><marquee direction="ltr">CopyRight@2021 & COVID-19 Live Upadate</marquee></p> 
+        </div>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            $("#move1").mouseenter(()=>{
+            $("#move1").css({"width":"100vw","background-color":"#0c0480","color":"#fff"});
+            $("#move2").css({"display":"block","border":"none"});
+           });
+         });
+        document.getElementById("move1").addEventListener("mouseleave",()=>{
+            document.getElementById("move1").style.width="fit-content";
+            document.getElementById("move1").style.backgroundColor="rgb(253, 253, 253)";
+            document.getElementById("move1").style.color="#000";
+            document.getElementById("move2").style.display="none";
+            
+        })
+        /* fetch API */
+        fetch("https://corona.lmao.ninja/v2/countries/").then((data)=>{
+            return data.json();
+        }).then((data1)=>{
+            document.getElementById("cases").innerHTML=data1[93].cases;
+            document.getElementById("move2").innerHTML=`Total Cases : ${data1[93].cases}`;
+            document.getElementById("deaths").innerHTML=data1[93].deaths;
+            document.getElementById("continent").innerHTML=data1[93].continent;
+            document.getElementById("country").innerHTML=data1[93].country;
+            document.getElementById("ctry").innerHTML=data1[93].country;
+            document.getElementById("active").innerHTML=data1[93].active;
+            document.getElementById("tests").innerHTML=data1[93].tests;
+            document.getElementById("recovered").innerHTML=data1[93].recovered;
+            document.getElementById("population").innerHTML=data1[93].population;
+            document.getElementById("myimg").src=data1[93].countryInfo.flag;
+        }).catch((err)=>{
+            console.log(err);
+        })
+       
+        document.getElementById("search").addEventListener("click",()=>{
+            let input=document.getElementById("iinnp").value;
+            let input1=input.charAt(0).toUpperCase()+ input.slice(1);
+            fetch("https://corona.lmao.ninja/v2/countries/").then((data2)=>{
+            return data2.json();
+             }).then((data13)=>{
+            for(i=0;i<data13.length;i++){
+                if(input1===data13[i].country){
+                    //console.log(data13[i].country)
+                    document.getElementById("cases").innerHTML=data13[i].cases;
+                    document.getElementById("move2").innerHTML=`Total Cases : ${data13[i].cases}`;
+                    document.getElementById("deaths").innerHTML=data13[i].deaths;
+                    document.getElementById("continent").innerHTML=data13[i].continent;
+                    document.getElementById("country").innerHTML=data13[i].country;
+                    document.getElementById("ctry").innerHTML=data13[i].country;
+                    document.getElementById("active").innerHTML=data13[i].active;
+                    document.getElementById("tests").innerHTML=data13[i].tests;
+                    document.getElementById("recovered").innerHTML=data13[i].recovered;
+                    document.getElementById("population").innerHTML=data13[i].population;
+                    document.getElementById("myimg").src=data13[i].countryInfo.flag;
+                }else{
+                    console.log("Input Wrong");
+                }
+            }
+        }).catch((err)=>{
+            console.log(err);
+        })
+        })
+    </script>
+</body>
+</html>

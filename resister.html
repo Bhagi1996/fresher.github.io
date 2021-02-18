@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="resister.js"></script>
+    <title>Fresher's Web</title>
+    <style>
+      .icoo:hover{
+        transform: scale(1.03);
+        transform-origin: left center;
+        color: lightseagreen;
+       
+      }
+      
+        .htmll{
+            background-color:rgb(1, 29, 29); 
+            position: absolute;
+            left:-40px;
+            text-align: center;
+            border: 1px solid #fff;
+             }
+        .htma:hover{
+           background-color:#fff;
+           color: #000;
+        }
+        .htma{
+            color: white;
+        }
+        .pqr{
+            border: 1px solid rgb(1, 29, 29);
+            border-radius: 5px;
+            padding:5px 11px 5px 11px;
+        }
+        .pqr:hover{
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .hoov:hover{
+            transform: scale(1.05);
+            transition: 500ms;
+        }
+    </style>
+</head>
+<body style="background-color:#000;">
+    <!-- navbar start -->
+        <nav class=" navbar navbar-dark navbar-md navbar-expand-md m-0" style=" background-color: rgb(1, 29, 29);">
+            <h1><a href="index.html" class="navbar-brand"><img src="logo.png" alt="logo" width="20px"><span class="pl-2">FRESHER'S WEB</span></a></h1>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+              <span class=" navbar-toggler-icon"></span>
+            </button>
+            <div class=" collapse navbar-collapse" id="mynav">
+            <ul class=" navbar-nav mr-auto">
+                <li class=" nav-item"><a href="index.html" class=" nav-link pqr">Home</a></li>
+                <li class=" nav-item"><a href="about.html" class=" nav-link pqr">AboutUs</a></li>
+                <li class=" nav-item dropdown" style="position: relative;">
+                    <a href="#" class=" nav-link dropdown-toggle pqr" data-toggle="dropdown" >Courses</a>
+                    <div class="dropdown-menu htmll">
+                        <a href="error.html" class=" dropdown-item htma">HTML</a>
+                        <a href="error.html" class=" dropdown-item htma">CSS</a>
+                        <a href="error.html" class=" dropdown-item htma">JavaScript</a>
+                        <a href="error.html" class=" dropdown-item htma">JQuery</a>
+                        <a href="error.html" class=" dropdown-item htma">BootStrap</a>
+                        <a href="error.html" class=" dropdown-item htma">ReactJs</a>
+                        <a href="error.html" class=" dropdown-item htma">NodeJS</a>
+                        <a href="error.html" class=" dropdown-item htma">ExpressJs</a>
+                        <a href="error.html" class=" dropdown-item htma">MongoDB</a>
+                        <a href="scramble.html" target="_blank" class=" dropdown-item htma">Game-1</a>
+                        <a href="game2.html" target="_blank" class=" dropdown-item htma">Game-2</a>
+                        <a href="Covid.html" target="_blank" class=" dropdown-item htma">Covid-19</a>
+                      </div>
+                </li>
+                <li class=" nav-item"><a href="gallery.html" class=" nav-link pqr">Gallery</a></li>
+                <li class=" nav-item">
+                    <a href="#" class=" nav-link pqr" data-toggle="modal" data-target="#exampleModal">ContactUs</a>
+                    <!-- modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content" style="border-radius: 2px;background-color: rgb(4, 4, 110);">
+                          <div class="modal-header" style="background-color:rgb(4, 4, 110);color: #fff;">
+                            <h3 class="modal-title" id="exampleModalLabel">ContactUs Page</h3>
+                            <button type="button" class="close px-5 py-4" data-dismiss="modal" aria-label="Close" style="background-color: maroon;color: white;">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body px-4 py-3" style="background-color: #fff;">
+                              <form action="">
+                                  <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlInput2">Mobile Number</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="+91########">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleFormControlInput3">write Your query</label>
+                                      <textarea name="ares" id="exampleFormControlInput3" cols="60" rows="5"></textarea>
+                                  </div>
+                              </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: maroon;color: #fff;";>Close</button>
+                            <button type="submit" class="btn" style="background-color: green;color: #fff;" onclick="alert('Your data submitted')"><a href="about.html" class="text-light text-decoration-none">Send Your Query</a> </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </li>
+            </ul>
+            <form action="https://www.google.com/search" class=" form-inline mr-5 w-auto " method="GET">
+              <input type="text" name="q" id="turu" class=" form-control form-control-sm mr-sm-2 w-auto" placeholder="search Here" >
+              <button  type="submit" class="btn btn-primary btn-sm my-0 my-sm-2">Search</button>
+             
+          </form>
+          </div>
+        </nav>
+        <!-- form section -->
+        <div class=" container-fluid p-0 m-0" style="box-sizing: border-box;">
+          <div class="row p-0 m-0">
+            <div class="col-md-7 p-0 m-0 ">
+              <a href="https://be-practical.com/" target="_blank"><img src="https://www.eply.com/hubfs/ePly-1.jpg" alt="reg" width="100%" height="100%"></a>
+            </div>
+            <div class="col-md-5 text-light px-4 " style="background: linear-gradient(to bottom right,#000,rgba(65, 62, 62, 0.692));">
+              <form action="">
+                <h2 class="text-center text-light mb-3">Resister Here</h2>
+                <div>
+                  <label for="name">Full Name</label> <span class=" float-right" id="name1f"></span>
+                  <input type="text" id="name" class="form-control mb-3" placeholder="Name......."  onkeyup="clck()">
+                </div>
+                <div>
+                  <label for="email">Email </label><span class=" float-right" id="email1f"></span>
+                  <input type="email" id="email" class="form-control mb-3" placeholder="xyz...@gmail.com" onkeyup="clck2()">
+                </div>
+                <div>
+                  <label for="Username">Username</label>
+                  <input type="text" id="Username" class="form-control mb-3" placeholder="xzz#6778" >
+                </div>
+                <div>
+                  <label for="pass">Password</label> 
+                  <input type="password" id="pass" class="form-control mb-3" placeholder="password">
+                </div>
+                <div>
+                  <label for="reppass">Repeat Password</label>
+                  <input type="password" id="reppass" class="form-control mb-3" placeholder="password again">
+                </div>
+                <div class="form-check mb-4">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <span class="text-muted">I agree to the</span>  <span class="text-primary" data-toggle="modal" data-target="#signopt">Term of User</span> 
+                  </label>
+                </div>
+                <div class="text-center">
+                <button type="submit" class="btn btn-warning mr-2 px-3" style="border-radius: 15px;">Sign Up</button>
+                <span class="btn btn-success px-3" data-toggle="modal" data-target="#signopt2" style="border-radius: 15px;">Sign In</span>
+                  <!-- term & cond start -->
+                <div class="modal  text-dark text-left fade" id="signopt" data-backdrop="static">
+                  <div class=" modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                      <div class=" modal-header">
+                        <div class=" modal-title h4">Term & Conditions</div>
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                      </div>
+                      <div class=" modal-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nulla mollitia rerum incidunt consequatur animi aperiam quibusdam, saepe possimus! Quidem a facere deleniti quia error debitis ratione reprehenderit consectetur officiis labore? Soluta deleniti dolores voluptate modi ut assumenda, impedit, nostrum minima alias ipsum quam odio. Neque possimus facilis porro, libero quia maxime corrupti et odio tenetur fuga accusamus repellat quae incidunt error ipsa asperiores. Ea voluptatum cumque magnam beatae placeat possimus doloribus corrupti quas neque eum id sit perspiciatis accusamus voluptates consequuntur cupiditate maxime est saepe necessitatibus reprehenderit sapiente . Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea consequuntur voluptatibus, quia rem mollitia sequi quis ipsum facere eveniet, tenetur porro quam delectus sint sapiente aperiam dignissimos eius nesciunt numquam, ad molestiae tempore repellendus non. Neque culpa quisquam cupiditate nesciunt nobis temporibus voluptate, harum id explicabo quas qui fugiat magnam, doloremque quae suscipit autem ullam ea enim est deserunt beatae! Nesciunt laudantium, nisi suscipit distinctio cum odit fugiat amet nam aperiam quaerat quisquam qui sequi sunt voluptate accusamus possimus alias eos natus perferendis iure. Quaerat vel sed similique! Quia recusandae architecto accusamus exercitationem quas rerum optio, porro veniam incidunt quibusdam autem odit excepturi quidem ipsa provident sed, quisquam neque corrupti? Fugit aspernatur, corrupti repudiandae, numquam architecto non eligendi dolores omnis inventore quam facere? Magni exercitationem amet tempore maxime modi eos cupiditate temporibus fugit, ullam possimus recusandae ipsum consequatur, qui dolor veniam autem ad repellendus esse iste quaerat porro doloremque eius facilis. Nobis tenetur explicabo quasi! Molestias, repellendus ab excepturi iste enim dolorem natus, at possimus cumque saepe necessitatibus laudantium nemo, voluptates deserunt ad! Veritatis voluptatibus dicta odio inventore mollitia alias doloremque eligendi repudiandae molestiae, officia tenetur cumque magni. Saepe, ullam tempora maxime obcaecati ipsum quos molestiae perspiciatis fuga possimus maiores.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             <!-- term & cond End   -->
+               </div>
+              </form>
+              <!-- modal start -->
+              <div class="modal  text-dark text-left fade" id="signopt2" style="background-color: rgba(9, 60, 136, 0.5);">
+                <div class=" modal-dialog modal-dialog-centered modal-lg" >
+                  <div class="modal-content" style="background:rgb(63, 63, 241);border-radius: 20px;">
+                    <div class=" modal-body">
+                      <div class=" container-fluid py-3">
+                        <div class="row">
+                          <div class="col-md-5">
+                            <img src="https://cdn.dribbble.com/users/1381187/screenshots/4279559/sign_in.png" alt="enter" width="100%" height="100%" style="border-radius: 45%;">
+                          </div>
+                          <div class="col-md-7 text-light">
+                            <form>
+                            <div class="form-group">
+                              <label for="exampleDropdownFormEmail2">Email address</label> 
+                              
+                              <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com" required>
+                              
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleDropdownFormPassword2">Password</label>
+                              <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck4">
+                                <label class="form-check-label" for="dropdownCheck4">
+                                  Remember me
+                                </label>
+                              </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                            <button  type="menu" class="btn btn-primary"><a href="navbar.html" class="text-light">Go Back Home</a></button>
+                            
+                          </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- modal end -->
+            </div>
+          </div>
+          <!-- bottom start -->
+          <div class="row justify-content-sm-around p-0 m-0" style="background-color:rgb(1, 29, 29);color: rgb(205, 214, 214);">
+            <div class="col-md-2 pt-4">
+              <h3 class="text-muted" style="font-family: 'Libre Baskerville', serif;color:rgb(176, 209, 207)">PROJECT</h3>
+              <P class="icoo"><i class="fa fa-bandcamp mr-2" aria-hidden="true"></i>Latest Release</P>
+              <p class="icoo"><i class="fa fa-grav mr-2" aria-hidden="true"></i>Updates</p>
+              <p class="icoo"><i class="fa fa-wpexplorer mr-2" aria-hidden="true"></i>Free API</p>
+              <p class="icoo"><i class="fa fa-user-circle mr-2" aria-hidden="true"></i>GitHun Project</p>
+              <p class="icoo"><i class="fa fa-telegram mr-2" aria-hidden="true"></i>Versions</p>
+            </div>
+  
+            <div class="col-md-2 pt-4">
+              <h3 class="text-muted" style="font-family: 'Libre Baskerville', serif;color:rgb(176, 209, 207)">Our Data</h3>
+              <P class="icoo"><i class="fa fa fa-file-image-o mr-2" aria-hidden="true"></i>Gallery</P>
+              <p class="icoo"><i class="fa fa-ravelry mr-2" aria-hidden="true"></i>CheatSheet</p>
+              <p class="icoo"><i class="fa fa-meetup mr-2" aria-hidden="true"></i>Demo</p>
+              <p class="icoo"><i class="fa fa-linode mr-2" aria-hidden="true"></i>Error Handeling</p>
+              
+            </div>
+  
+            <div class="col-md-2 pt-4">
+              <h3 class="text-muted" style="font-family: 'Libre Baskerville', serif;color:rgb(176, 209, 207)">IMPORTANT</h3>
+              <P class="icoo"><i class="fa fa-home mr-2" aria-hidden="true"></i>Home</P>
+              <p class="icoo"><i class="fa fa-asterisk mr-2" aria-hidden="true"></i>AboutUs</p>
+              <p class="icoo"><i class="fa fa-book mr-2" aria-hidden="true"></i>Courses</p>
+              <p class="icoo"><i class="fa fa-volume-control-phone mr-2" aria-hidden="true"></i>ContactUs</p>
+            </div>
+  
+            <div class="col-md-2 pt-4">
+              <h3 class="text-muted" style="font-family: 'Libre Baskerville', serif;color:rgb(176, 209, 207)">SOCIAL LINKS</h3>
+              <P class="icoo pl-2"><i class="fa fa-facebook-official mr-2" aria-hidden="true"></i>Facebook</P>
+              <p class="icoo pl-2"><i class="fa fa-instagram mr-2" aria-hidden="true"></i>Instagram</p>
+              <p class="icoo pl-2"><i class="fa fa-twitter mr-2" aria-hidden="true"></i>twitter</p>
+              <p class="icoo pl-2"><i class="fa fa-git mr-2" aria-hidden="true"></i>GitHub</p>
+              <p class="icoo pl-2"><i class="fa fa-linkedin mr-2" aria-hidden="true"></i>Linked-In</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        </div>
+        <div style="background-color: dark;">
+          <marquee class="py-1 text-muted">Copy Right &copy; year of 2020  And designed by Bhagirathi sahoo</marquee>
+        </div>
+
+        <script>
+          /* form validation */
+          /* fullname */
+          function clck(){
+          const name=document.getElementById("name");
+          const name1f=document.getElementById("name1f");
+          if(name.value!=="" ){
+                name1f.innerHTML="";
+                name.style.border="1px solid green"
+          }else{
+            name1f.innerHTML="Please fill this section***"
+            name1f.style.color="red"
+            name.style.border="1px solid red"
+          }
+        }
+        /* email */
+        function clck2(){
+          const email=document.getElementById("email");
+          const email1f=document.getElementById("email1f");
+          if(email.value!=="" ){
+                email1f.innerHTML="";
+                email.style.border="1px solid green"
+          }else{
+            email1f.innerHTML="Please enter correct Email_Id***"
+            email1f.style.color="red"
+            email.style.border="1px solid red"
+          }
+        }
+        </script>
+</body>
+</html>
